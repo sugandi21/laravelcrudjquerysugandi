@@ -103,7 +103,7 @@
 
           function create(){
              $.get("{{ url('create') }}", {}, function(data, status) {
-              $("#exampleModalLabel").html('input data');  
+              $("#exampleModalLabel").html('Input Data');  
               $("#halamaninput").html(data);
               $("#exampleModal").modal('show');
           });
@@ -126,7 +126,7 @@
 
         function show(id) {
             $.get("{{ url('show') }}/" + id, {}, function(data, status) {
-                $("#exampleModalLabel").html('Edit Product')
+                $("#exampleModalLabel").html('Edit Data')
                 $("#halamaninput").html(data);
                 $("#exampleModal").modal('show');
             });
